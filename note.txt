@@ -1,0 +1,29 @@
+"""
+this project is running in venv
+"""
+Building a WhatsApp Chatbot with Python, Twilio, and EC2: Introducing ChatGPT WhatsApp Bot
+====================
+https://www.youtube.com/watch?v=Fej2wb4YHes
+https://github.com/Spidy20/ChatGPT_Whatsapp_Bot/tree/master
+
+#create venv
+$sudo apt-get install python3.8-venv
+
+#install libraries to venv whatsapp-chatbot
+$sudo /home/senzmatepc27/Desktop/senzmate/Internal\ projects/Fairway\ holdings/whatsapp-chatbot/bin/python3 -m pip install -r ChatGPT_Whatsapp_Bot/requirements.txt
+
+#install spyder kernal if running in spyder
+sudo /home/senzmatepc27/Desktop/senzmate/Internal\ projects/Fairway\ holdings/whatsapp-chatbot/bin/python3 -m pip install spyder-kernels==2.5.*
+
+#install ngrok
+$ngrok
+$ngrok authtoken ""
+
+#set openai key as environment variable
+$export OPENAI_API_KEY=
+
+#How to RUN
+$/home/senzmatepc27/Desktop/senzmate/Internal\ projects/Fairway\ holdings/whatsapp-chatbot/bin/python3 BOT_API.py
+$ngrok http 5000
+
+Now http://127.0.0.1:5000 will be mapped to ngrok URL. use that url in Twilio to send whatsapp incoming messages
